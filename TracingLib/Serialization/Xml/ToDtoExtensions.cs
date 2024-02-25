@@ -4,32 +4,23 @@ namespace TracingLib.Serialization.Xml;
 
 internal static class ToDtoExtensions
 {
-    public static TraceResultDto ToDto(this TraceResult traceResult)
+    public static TraceResultDto ToDto(this TraceResult traceResult) => new()
     {
-        return new TraceResultDto
-        {
-            ThreadTraceResults = traceResult.ThreadTraceResults.Select(ToDto).ToList()
-        };
-    }
-    
-    private static ThreadTraceResultDto ToDto(ThreadTraceResult threadTraceResult)
+        ThreadTraceResults = traceResult.ThreadTraceResults.Select(ToDto).ToList()
+    };
+
+    private static ThreadTraceResultDto ToDto(ThreadTraceResult threadTraceResult) => new()
     {
-        return new ThreadTraceResultDto
-        {
-            ThreadId = threadTraceResult.ThreadId,
-            ElapsedTime = threadTraceResult.ElapsedTime,
-            MethodTraceResults = threadTraceResult.MethodTraceResults.Select(ToDto).ToList()
-        };
-    }
-    
-    private static MethodTraceResultDto ToDto(MethodTraceResult methodTraceResult)
+        ThreadId = threadTraceResult.ThreadId,
+        ElapsedTime = threadTraceResult.ElapsedTime,
+        MethodTraceResults = threadTraceResult.MethodTraceResults.Select(ToDto).ToList()
+    };
+
+    private static MethodTraceResultDto ToDto(MethodTraceResult methodTraceResult) => new()
     {
-        return new MethodTraceResultDto
-        {
-            MethodName = methodTraceResult.MethodName,
-            ClassName = methodTraceResult.ClassName,
-            ElapsedTime = methodTraceResult.ElapsedTime,
-            InnerMethodTraceResults = methodTraceResult.InnerMethodTraceResults.Select(ToDto).ToList()
-        };
-    }
+        MethodName = methodTraceResult.MethodName,
+        ClassName = methodTraceResult.ClassName,
+        ElapsedTime = methodTraceResult.ElapsedTime,
+        InnerMethodTraceResults = methodTraceResult.InnerMethodTraceResults.Select(ToDto).ToList()
+    };
 }

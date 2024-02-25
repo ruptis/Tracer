@@ -1,5 +1,4 @@
 ﻿using System.Text.Json;
-using TracingLib.Tracing;
 using TracingLib.Tracing.Results;
 namespace TracingLib.Serialization.Json;
 

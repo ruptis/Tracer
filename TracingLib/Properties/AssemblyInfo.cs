@@ -1,1 +1,2 @@
-﻿[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("TracingLib.Tests")]
+﻿using System.Runtime.CompilerServices;
+[assembly: InternalsVisibleTo("TracingLib.Tests")]

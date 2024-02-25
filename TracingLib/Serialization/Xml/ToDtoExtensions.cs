@@ -1,5 +1,5 @@
 ﻿using TracingLib.Serialization.Xml.Dto;
-using TracingLib.Tracing;
+using TracingLib.Tracing.Results;
 namespace TracingLib.Serialization.Xml;
 
 internal static class ToDtoExtensions

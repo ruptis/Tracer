@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using TracingLib.Tracing.Results;
 namespace TracingLib.Tracing;
 
 internal readonly record struct ThreadTracer(int ThreadId)

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using System.Diagnostics;
 using System.Reflection;
+using TracingLib.Tracing.Results;
 namespace TracingLib.Tracing;
 
 public sealed class Tracer : ITracer

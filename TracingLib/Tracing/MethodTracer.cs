@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using TracingLib.Tracing.Results;
 namespace TracingLib.Tracing;
 
 internal readonly record struct MethodTracer(string MethodName, string ClassName)

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracer", "Tracer\Tracer.csproj", "{9AA300E4-722D-488B-B062-04731F301342}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TracerExample", "TracerExample\TracerExample.csproj", "{9AA300E4-722D-488B-B062-04731F301342}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TracingLib", "TracingLib\TracingLib.csproj", "{FF52AFF5-0556-4B5B-B306-14173C4D053C}"
 EndProject

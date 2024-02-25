@@ -1,5 +1,6 @@
 ﻿using TracingLib.Serialization.Json.Dto;
 using TracingLib.Tracing;
+using TracingLib.Tracing.Results;
 namespace TracingLib.Serialization.Json;
 
 internal static class ToDtoExtensions

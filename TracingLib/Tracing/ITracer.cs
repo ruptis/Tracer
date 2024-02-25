@@ -1,4 +1,5 @@
-﻿namespace TracingLib.Tracing;
+﻿using TracingLib.Tracing.Results;
+namespace TracingLib.Tracing;
 
 public interface ITracer
 {
